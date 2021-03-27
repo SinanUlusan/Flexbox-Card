@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif; 
+}
+
+.container {
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.container .card {
+    width: 356px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #202842;
+    border-radius: 1.5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1)); 
+}
+
+.container .first-card {
+    background-color: #fff;
+    border: 1px solid #000000;
+}
+
+.card-header {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-left: 55px;
+}
+
+.card-header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.card-header h5 {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.7;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.card-header h1 {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 65px;
+    margin-top: 35px;
+}
+
+.card-information {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+.info-row {
+    display: flex;
+    margin: 12px;
+}
+
+.left-item {
+    font-size: 13px;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #202842;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.right-text {
+    color: #182745;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+button {
+    width: 70%;
+    height: 49px;
+    background-color: #202842;
+    border-radius: 29px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #315191;
+    transition: 1s;
+    transform: rotateX(360deg);
+}
+
+.second-card {
+    border: 1px solid #ffffff;
+    background-color: #202842;
+}
+
+.second-card .card-header {
+    color: #fff;
+}
+
+.second-card .info-row {
+    display: flex;
+    margin-left: 20px;
+}
+
+.second-card .left-item {
+    background-color:#fff;
+}
+
+.second-card .info-row .right-text {
+    color: #fff;
+}
+
+.second-card button {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    color: #202842;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+        width: 336px;
+        height: 600px;
+    }
+
+    .first-card {
+        margin-top: 22rem;
+    }
+     .card-header{
+        margin-top: 3rem;
+    }
+
+    .first-card .card-information {
+        margin-bottom: 3rem;
+    }
+
+    .first-card button {
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media only screen and (max-height: 667px) {
+  .first-card {
+        margin-top: 35rem;
+    }
+}
+
+@media only screen and (min-height: 668px) {
+    .first-card {
+        margin-top: 30rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .first-card {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-height: 568px) {
+    .first-card {
+        margin-top: 45rem;
+    }
+}
